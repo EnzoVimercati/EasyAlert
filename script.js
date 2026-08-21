@@ -1,3 +1,15 @@
+
+
+const imagem = document.getElementById("LampAction");
+
+imagem.addEventListener("click", function () {
+    if (imagem.src.includes("lightbulb-off")) {
+        imagem.src = "/assets/lightbulb (1).svg";
+    } else {
+        imagem.src = "/assets/lightbulb-off (1).svg";
+    }
+});
+
 const SelectAlert = document.getElementById("Select-alert")
 
 function criarToast(mensagem) {
